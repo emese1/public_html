@@ -1,0 +1,5 @@
+The application can be found under the public_html directory. The main page is started with the index.php. The main page contains some pictures about cats. On the navigation bar we can navigate between the Main page, Insert cats page and List cats page. The List cats page lists the inserted cats. Every row contains an Edit and Delete button for editing cats' data or deleting them.  The header contains the + button which is for inserting cats. On the top is a Filter button and clicking on that there will appear a form with  the breed and name of the cats. It can be made some searching on the cats table by name, by breed or both of them. Next to the Filter button are two text fields. Both of them search in the list on the web page (not in the database) by breed and by name.
+
+The application uses the pets database. The user name is: pets_user and the password is: pets_user123. This is saved in the conf.inc.php file under the inc folder.
+
+The pets_db.sql file contains the creation of the cats table and inserts into table 16 rows. You can use this data if you want.
