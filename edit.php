@@ -37,12 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   else {
     $name = test_data($_POST["name"]);
   } 
+  $id = $_POST["id"];
 
   if ($breedErr == "" && $nameErr == "") { 
    
    $value = array("breed" => $breed,
                   "name"  => $name);
-   $where_clause["cats_id"] = $_POST["id"];
+   $where_clause["cats_id"] = $id;
 
    $mess = $pets->updateTable("cats", $value, $where_clause);
    if ($mess["error"] == "") {
